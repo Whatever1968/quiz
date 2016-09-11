@@ -1,0 +1,30 @@
+/* Set the backgrond image for the web page*/
+body {
+	background-color: #FFB6C1;
+    
+}
+h1 {
+	font-family: 'Luckiest Guy', cursive;
+}
+
+/* set button width and styling*/
+.btn-block {
+    display: block;
+    width: 60%;
+    background-color: white;    
+    border: 0%;
+    
+}
+
+img {
+    width: 50%;
+    height: 100%;
+}
+
+button {
+    background-color: white;
+    padding: 1%;
+    width: 50%;
+    margin: .5%;
+    color: #33334D;
+}
