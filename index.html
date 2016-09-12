@@ -1,122 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">	
+	<!--Created by Rod Trevino student Codify Academy-->
 	<title>Quiz Application</title>	
+	<!--Below is the fonts link-->
 	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  	
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!--Below is the bootstrap link-->
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+  	<!--Below is the css folder link-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-
-
 <center>
-	<h1>How well do you know your Teen?</h1><br>
+	<h1 id="change">How well do you know your Teen?</h1><br>
+	<a href="http://www.builtbyrod.com/">
 	<img src="img/teen.jpg">
+	</a>
 </center><br>
 
-<center>
-				
-				<h2 id="qOne">What does the term "Dank memes" refer too?</h2>		
+<center id="godzilla">
+	<!-- Create a bunch of buttons with selections -->			
+	<h2 id="qOne">What does the term "Dank memes" refer too?</h2>	
+		<button type = "button" onclick="one()">Bad Memories</button><br>
+		<button type="button" onclick="two()">Image with words for humour</button><br>
+		<button type = "button" onclick="three()">Nice Nail Manicure</button><br><br>
 
-					<button type = "button" onclick="one()">Bad Memories</button><br>
+	<h2 id="qTwo">What does it mean when someone is "Throwing Shade."?</h2>
+		<button type = "button" onclick="four()">Trash Talking or Mean Mugging</button><br>
+		<button type="button" onclick="five()">Spreading Rumours</button><br>
+		<button type="button" onclick="six()">Sharing your Umbrella</button><br><br>
 
-					<button type="button" onclick="two()">Image with words for humour</button><br>
+	<h2 id="qThree">What does the term "bae" refer to?</h2>
+		<button type = "button" onclick="seven()">Short for "baby"</button><br>
+		<button type="button" onclick="eight()">New Way to say Best Friend</button><br>
+		<button type="button" onclick="nine()">Your Boyfriend, "Before Anyone Else"</button><br><br>
 
-					<button type = "button" onclick="three()">Nice Nail Manicure</button>	
+	<h2 id="qFour">What does it mean "To Neck Someone"?</h2>
+		<button type = "button" onclick="ten()">Making out in the dark</button><br>
+		<button type="button" onclick="eleven()">To give someone a Necklace?</button><br>
+		<button type="button" onclick="twelve()">A Neck Slap on the back of the Neck</button><br><br>
 
-					
-<br><br>
+	<h2 id="qFive">What does the term "that's savage" refer to?</h2>
+		<button type = "button" onclick="thirteen()">A Poor Person</button><br>
+		<button type="button" onclick="fourteen()">Someone who smells bad</button><br>
+		<button type="button" onclick="fifteen()">Something Hard Core</button><br><br>
 
+	<h2 id="qSix">What does the term "to ship people" refer to?</h2>
+		<button type = "button" onclick="sixteen()">Put them on a large boat</button><br>
+		<button type="button" onclick="seventeen()">Send both a package</button><br>
+		<button type="button" onclick="eighteen()">Playing match maker</button><br><br>
 
+	<h2 id="qSeven">What does the acronym "IDEK" mean?</h2>
+		<button type = "button" onclick="nineteen()">I don't eat ketchup</button><br>
+		<button type="button" onclick="twenty()">It does everything killer</button><br>
+		<button type="button" onclick="twentyone()">I don't even know</button><br><br>
 
-
-				<h2 id="qTwo">What does it mean when someone is "Throwing Shade."?</h2>
-
-					<button type = "button" onclick="four()">Trash Talking or Mean Mugging</button><br>
-
-					<button type="button" onclick="five()">Spreading Rumours</button><br>
-
-					<button type="button" onclick="six()">Sharing your Umbrella</button>
-
-
-<br><br>
-				<h2 id="qThree">What does the term "bae" refer to?</h2>
-
-					<button type = "button" onclick="seven()">Short for "baby"</button><br>
-
-					<button type="button" onclick="eight()">New Way to say Best Friend</button><br>
-
-					<button type="button" onclick="nine()">Your Boyfriend, "Before Anyone Else"</button>
-
-
-<br><br>
-
-				<h2 id="qFour">What does it mean "To Neck Someone"?</h2>
-
-					<button type = "button" onclick="ten()">Making out in the dark</button><br>
-
-					<button type="button" onclick="eleven()">To give someone a Necklace?/button><br>
-
-					<button type="button" onclick="twelve()">A Neck Slap on the back of the Neck</button>
-
-
-<br><br>
-
-
-				<h2 id="qFive">What does the term "that's savage" refer to?</h2>
-
-					<button type = "button" onclick="thirteen()">A Poor Person</button><br>
-
-					<button type="button" onclick="fourteen()">Someone who smells bad</button><br>
-
-					<button type="button" onclick="fifteen()">Something Hard Core</button>
-
-
-<br><br>
-
-				<h2 id="qSix">What does the term "to ship people" refer to?</h2>
-
-					<button type = "button" onclick="sixteen()">Put them on a large boat</button><br>
-
-					<button type="button" onclick="seventeen()">Send both a package</button><br>
-
-					<button type="button" onclick="eighteen()">Playing match maker</button>
-
-
-<br><br>
-
-				<h2 id="qSeven">What does the acronym "IDEK" mean?</h2>
-
-					<button type = "button" onclick="nineteen()">I don't eat ketchup</button><br>
-
-					<button type="button" onclick="twenty()">It does everything killer</button><br>
-
-					<button type="button" onclick="twentyone()">I don't even know</button>
-
-
-<br><br>
-
-				<h2 id="qEight">What does "Hangry" mean?</h2>
-
-					<button type = "button" onclick="twentytwo()">Hanging with friends</button><br>
-
-					<button type="button" onclick="twentythree()">Hungry and Angry at the same time</button><br>
-
-					<button type="button" onclick="twentyfour()">Code for a group hug</button>
-
-
-<br><br>
-
+	<h2 id="qEight">What does "Hangry" mean?</h2>
+		<button type = "button" onclick="twentytwo()">Hanging with friends</button><br>
+		<button type="button" onclick="twentythree()">Code for a group hug</button><br>
+		<button type="button" onclick="twentyfour()">Hungry and Angry at the same time</button><br><br>
 </center><br>
-<footer>
-<center>
-	<h6>Coded by Rod using JavaScript, Copyright 2016</h6>
-	<a href="http://www.builtbyrod.com/">CONTACT ROD</a><br><br><br><br>
-</center>
-</footer>
-
 	<script src="js/main.js"></script>
 
 </body>
